@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Bar } from 'react-chartjs-2';
 import { calcularOdds } from "../../services/api";
+import "../app/globals.css";
 
 import {
     Chart as ChartJS,
@@ -78,7 +79,8 @@ function GraphBar({selectedTimeId1, selectedTimeId2}: GraphBarProps) {
           data: times.map(time => time.won !== undefined ? time.won : 0),
           backgroundColor: 'rgba(54, 162, 235, 0.2)',
           borderColor: 'rgba(54, 162, 235, 1)',
-          borderWidth: 1
+          borderWidth: 1,
+        
         }]
       };
       
@@ -89,7 +91,7 @@ function GraphBar({selectedTimeId1, selectedTimeId2}: GraphBarProps) {
     return (
         <>
             
-            <Bar data={dadosDoGrafico} />
+            <Bar className="GraphBar" data={dadosDoGrafico} />
         </>
     );
 }

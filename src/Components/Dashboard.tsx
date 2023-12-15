@@ -18,11 +18,19 @@ const Dashboard: React.FC = () => {
     }
 
     return (
-        <div>
-            <SelecaoDeTime onIdsSelected={handleIdsSelected} />
-            <GraphBar selectedTimeId1={selectedTimeId1} selectedTimeId2={selectedTimeId2} />
-            <GraphPizza selectedTimeId1={selectedTimeId1} selectedTimeId2={selectedTimeId2} />
-            <GraphLine selectedTimeId1={selectedTimeId1} selectedTimeId2={selectedTimeId2} />
+        <div className="container-graph-input">
+            <div className="input-container">
+                <SelecaoDeTime onIdsSelected={handleIdsSelected} />
+            </div>
+            <div className="graph-container">
+                <div className="Graph2">
+                <GraphBar selectedTimeId1={selectedTimeId1} selectedTimeId2={selectedTimeId2} />
+                <GraphLine selectedTimeId1={selectedTimeId1} selectedTimeId2={selectedTimeId2} />
+                </div>
+                <div className="Graph1">
+                <GraphPizza selectedTimeId1={selectedTimeId1} selectedTimeId2={selectedTimeId2} />
+                </div>
+            </div>
         </div>
     );
 };

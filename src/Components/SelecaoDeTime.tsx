@@ -17,8 +17,8 @@ function SelecaoDeTime({onIdsSelected}:SelecaoDeTimesProps) {
 
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
+        <div className={"form-container"}>
+            <form className={"form-input-button"} onSubmit={handleSubmit}>
                 <input
                     type="text"
                     value={localTimeId1}

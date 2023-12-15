@@ -21,7 +21,7 @@ function TabelaDeTimes() {
     
     return (
         <div>
-            <table>
+            <table className={"tabela_de_times"}>
                 <thead>
                     <tr>
                         <th>ID</th>

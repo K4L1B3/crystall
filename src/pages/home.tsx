@@ -11,15 +11,14 @@ const dadosDeExemplo = [
 */
 
 function Home() {
- 
-
   return (
-    <div>
-
-      <TabelaDeTimes />
-      <Dashboard />
-    
-
+    <div className='container-tables-dashboard'>
+      <div className="table-container">
+        <TabelaDeTimes />
+      </div>
+      <div className="graph-container">
+        <Dashboard />
+      </div>
     </div>
   );
 }

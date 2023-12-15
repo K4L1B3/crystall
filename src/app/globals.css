@@ -1,0 +1,213 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Estilos gerais para a tabela */
+.tabela_de_times {
+    width: 20%; /* Ajustar para o tamanho desejado */
+    border-radius: 20;
+    border-collapse: collapse; /* Para remover o espaço entre as bordas */
+    margin:5%; /* Ajustar conforme necessário */
+    margin-top: 30%;
+    font-size: 1em; /* Ajustar o tamanho da fonte conforme necessário */
+    font-family: 'Arial', sans-serif; /* Escolha da fonte */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); /* Sombra suave ao redor da tabela */
+    
+  }
+  
+  /* Estilização do cabeçalho da tabela */
+  .tabela_de_times thead th {
+    background-color: #303030; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto do cabeçalho */
+    padding: 10px 20px; /* Espaçamento interno do cabeçalho */
+  }
+  
+  /* Estilização das linhas da tabela */
+  .tabela_de_times tbody td {
+    padding: 7px 20px; /* Espaçamento interno das células */
+    border-bottom: 1px solid #dddddd; /* Bordas entre as linhas */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Estilização de cores alternadas para as linhas */
+  .tabela_de_times tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3; /* Cor de fundo para linhas pares */
+  }
+  
+  .tabela_de_times tbody tr:nth-of-type(odd) {
+    background-color: #ffffff; /* Cor de fundo para linhas ímpares */
+  }
+  
+  /* Efeito hover nas linhas */
+  .tabela_de_times tbody tr:hover {
+    background-color: #f1f1f1; /* Cor de fundo ao passar o mouse */
+    cursor: pointer; /* Muda o cursor para indicar interatividade */
+  }
+  
+  /* Estilização das células para alinhamento */
+  .tabela_de_times td,
+  .tabela_de_times th {
+    text-align: left; /* Alinha o texto à esquerda; ajuste conforme necessário */
+  }
+  
+  .container-tables-dashboard {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 60px; /* Espaço entre a tabela e os gráficos */
+}
+  
+  .tabela_de_times {
+    flex: 1; /* A tabela pode crescer para ocupar espaço */
+    max-width: 400px; /* Defina uma largura máxima para a tabela se necessário */
+  }
+  
+  .container-graph-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+
+  
+  .graph-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-top: 3%;
+    gap: 20px; /* Espaço entre cada gráfico */
+    width: 100%; /* Isto garantirá que o contêiner ocupe todo o espaço horizontal disponível */
+    max-width: 600px;
+    max-height: auto;/* A largura máxima que o contêiner dos gráficos pode ter */
+  }
+
+  .Graph2 {
+    display: flex;
+    gap: 120px;
+    
+  }
+  
+  .Graph1 {
+    width: 100%; /* Cada gráfico ocupará a largura total do contêiner .graph-container */
+    height: auto; /* A altura será proporcional à largura para manter a relação de aspecto */
+  }
+
+  /* Estilos do contêiner do gráfico */
+.graph-container {
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px; /* Espaçamento entre os gráficos */
+}
+
+/* Se seus gráficos estão diretamente dentro do .graph-container e quer que cada um tenha o fundo */
+.graph-container > div {
+  width: 100%; /* Ajuste conforme necessário */
+  background: inherit; /* Herda o fundo do .graph-container */
+  padding: 20px;
+  border-radius: inherit; /* Herda o border-radius do .graph-container */
+  box-shadow: inherit; /* Herda o box-shadow do .graph-container */
+}
+
+  
+ /* Container do formulário */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Estilos do formulário */
+.form-input-button {
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Estilos dos inputs */
+.form-input-button input[type="text"] {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  width: 200px;
+  transition: border-color 0.3s;
+}
+
+.form-input-button input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Estilos do botão */
+.form-input-button button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-input-button button:hover {
+  background-color: #0056b3;
+}
+
+    
+
+
