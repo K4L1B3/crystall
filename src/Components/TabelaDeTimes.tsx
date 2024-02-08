@@ -20,7 +20,7 @@ function TabelaDeTimes() {
     }, [])
     
     return (
-        <div>
+        <div className="tabela-central-div">
             <table className={"tabela_de_times"}>
                 <thead>
                     <tr>

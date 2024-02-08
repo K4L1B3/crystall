@@ -23,12 +23,21 @@ const Dashboard: React.FC = () => {
                 <SelecaoDeTime onIdsSelected={handleIdsSelected} />
             </div>
             <div className="graph-container">
-                <div className="Graph2">
-                <GraphBar selectedTimeId1={selectedTimeId1} selectedTimeId2={selectedTimeId2} />
-                <GraphLine selectedTimeId1={selectedTimeId1} selectedTimeId2={selectedTimeId2} />
+                <div className="graph-container-bars">
+                    <div className="Graph2">
+                        <h3>Gráfico 2</h3>
+                        <GraphLine selectedTimeId1={selectedTimeId1} selectedTimeId2={selectedTimeId2} />
+                    </div>
+                    <div className="Graph3">
+                        <h3>Gráfico 2</h3>
+                        <GraphBar selectedTimeId1={selectedTimeId1} selectedTimeId2={selectedTimeId2} />
+                    </div>
                 </div>
-                <div className="Graph1">
-                <GraphPizza selectedTimeId1={selectedTimeId1} selectedTimeId2={selectedTimeId2} />
+                <div className="graph-container-bars-2">
+                    <div className="Graph1">
+                        <h3>Gráfico 2</h3>
+                        <GraphPizza selectedTimeId1={selectedTimeId1} selectedTimeId2={selectedTimeId2} />
+                    </div>
                 </div>
             </div>
         </div>
