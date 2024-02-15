@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const apiBaseUrl = 'https://projetoestatistica-oznm94ou.b4a.run';
+const apiBaseUrl = 'https://crystallfutballbackend-z3bc2b71.b4a.run';
 
 export async function obterTimes() {
     try {
