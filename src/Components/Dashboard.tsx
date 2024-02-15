@@ -25,17 +25,17 @@ const Dashboard: React.FC = () => {
             <div className="graph-container">
                 <div className="graph-container-bars">
                     <div className="Graph2">
-                        <h3>Gráfico 2</h3>
+                        <h3>Gráfico de linha</h3>
                         <GraphLine selectedTimeId1={selectedTimeId1} selectedTimeId2={selectedTimeId2} />
                     </div>
                     <div className="Graph3">
-                        <h3>Gráfico 2</h3>
+                        <h3>Gráfico de Barras</h3>
                         <GraphBar selectedTimeId1={selectedTimeId1} selectedTimeId2={selectedTimeId2} />
                     </div>
                 </div>
                 <div className="graph-container-bars-2">
                     <div className="Graph1">
-                        <h3>Gráfico 2</h3>
+                        <h3>Gráfico de Pizza</h3>
                         <GraphPizza selectedTimeId1={selectedTimeId1} selectedTimeId2={selectedTimeId2} />
                     </div>
                 </div>
